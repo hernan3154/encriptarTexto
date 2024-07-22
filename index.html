@@ -5,10 +5,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/style.css">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        
         <title>Encriptador de textos</title>
     </head>
-
+    <header class="nav">
+        <div>
+        <img src="/img/removebg.png" alt="">
+    </div>
+    </header>
     <body>
+
         <!--encriptador contenedor-->
         <div class="container">
             <div class="encriptar">
@@ -22,25 +29,40 @@
               ></textarea>
 
                 <div class="terminos">
-                    <p>Solo letras minuscula y sin acentos...</p>
+                    <p>Solo letras minúsculas y sin acentos...</p>
                 </div>
                 <div class="botones">
-                    <button class="btn-encriptar" type="button" onclick="encriptar( )"> Encriptar</button>
+                    <button class="btn-encriptar" type="button" onclick="encriptar( )"> ENCRIPTAR</button>
                     
-                    <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()" />
+                    <input type="button" class="btn-desencriptar" value="DESENCRIPTAR" onclick="desencriptar()" />
                 </div>
             </div>
             <!--contenedor de desencriptado-->
             <div class="encriptado">
                 <img src="/img/Esperanado_el_Texto-removebg-preview.png" alt="" id="img">
                 <div class="mensaje-encriptado" id="mensaje-encriptado">
-                    <h2 id="titulo-mensaje">Ningun Mensaje Econtrado</h2>
+                    <h2 id="titulo-mensaje">Ningún Mensaje Encontrado</h2>
                     <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-                   <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>-->
+                <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>-->
+                <button id="copiar-btn" class="copiar-btn" onclick="copiarTexto()" style="display: none;" >Copiar</button>
                 </div>
             </div>
         </div>
+
+        <footer class="footer">
+            <div>
+                <h1>&copy; Hernán Fernández </h1>
+
+                <p> &copy;2024 Por Hernán Fernández </p>
+
+                
+                <br><br>
+                <hr>
+
+            </div>
+        </footer>
     </body>
     <script src="/index.js"></script>
+    
 
 </html>
