@@ -14,7 +14,7 @@ Este proyecto es una aplicacion web permite a los usuarios encriptar y desncript
 
 * HTML5: Estructura de la pagina.
 * CSS : Estilos y diseño responsivo.
-JavaScript: Logica de encriptacion y desencriptacion, y manipulacion del DOM.
+* JavaScript: Logica de encriptacion y desencriptacion, y manipulacion del DOM.
 
 ## Como Usar
 
